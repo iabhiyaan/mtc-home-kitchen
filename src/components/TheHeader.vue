@@ -24,7 +24,7 @@
       </nav>
       <a href="#" class="btn btn-alt">My Order <TheShoppingCartIcon /></a>
     </div>
-    <div class="container">
+    <div class="container overflow-x-hidden">
       <TheDivider width="1300px" :opacity="0.3" />
     </div>
   </header>
