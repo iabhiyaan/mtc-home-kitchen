@@ -1,14 +1,14 @@
 <template>
   <section class="section section-features">
     <div class="container text-center">
-      <h5>what our customers say</h5>
-      <h2 class="section-title">Over 35 years experience designing handmade kitchens</h2>
+      <p class="subheading text-primary">what our customers say</p>
+      <h2 class="section-title section-content mx-auto">Over 35 years experience designing handmade kitchens</h2>
       <div class="testimonial-slider">
         <button class="slider-button" @click="prev">
           <img :src="leftArrow" alt="left arrow" />
         </button>
         <div>
-          <p class="testimonial-slider-content mx-auto">
+          <p class="testimonial-slider-content mx-auto section-content">
             {{ testimonials[current].text }}
           </p>
           <span>
@@ -59,12 +59,5 @@ const { next, prev, current } = useSlider(testimonials)
   padding: 0;
   margin: 0;
 }
-
-@media (min-width: 768px) {
-  .testimonial-slider-content {
-    width: 600px;
-  }
-}
-
 
 </style>

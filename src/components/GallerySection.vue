@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container text-center">
       <h2 class="section-title">Customer Gallery</h2>
-      <div class="grid grid-4-cols">
+      <div class="grid grid-4-cols gallery-wrapper">
         <div v-for="(image, index) in galleryImages" :key="index" class="gallery-item">
           <img :src="image" alt="Gallery Image" class="gallery-image">
         </div>
@@ -28,8 +28,7 @@ const galleryImages = [
 </script>
 
 <style scoped>
-/* Scoped styles can be used to override or specify component layout if needed */
-.container {
-  max-width: 800px; /* Make testimonial section narrower for readability */
+.gallery-wrapper {
+  gap: var(--gutter)
 }
 </style>

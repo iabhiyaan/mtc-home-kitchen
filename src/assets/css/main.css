@@ -143,6 +143,14 @@ a {
     overflow: hidden;
 }
 
+.text-primary {
+    color: var(--color-primary);
+}
+
+.font-secondary {
+    font-family: var(--font-family-secondary);
+}
+
 /* ==========================================================================
    4. Layout Helpers (No changes here)
    ========================================================================== */
@@ -222,6 +230,7 @@ a {
     font-weight: var(--font-weight-normal);
     text-transform: uppercase;
     font-size: var(--font-size-sm);
+    letter-spacing: 3px;
 }
 
 .btn-primary:hover {
@@ -248,6 +257,27 @@ a {
 .btn-alt-dark:hover {
     background-color: #333;
     border-color: #333;
+}
+
+.section .subheading {
+    font-family: var(--font-family-secondary); /* Use Roboto */
+    font-size: var(--font-size-xs); /* Use 13px */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.rounded-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.rounded-icon-wrapper svg {
+    color: var(--color-dark);
 }
 
 /* Blockquote style */
@@ -313,5 +343,20 @@ blockquote footer {
         --font-size-xl: 22px;
         --font-size-xxl: 28px;
         --font-size-xxxl: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-content {
+        width: 600px;
+    }
+
+    .footer-col__heading {
+        font-size: var(--font-size-lg);
+        font-family: var(--font-family-primary);
+    }
+
+    .copyright-content {
+        width: 368px;
     }
 }

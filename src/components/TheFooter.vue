@@ -10,7 +10,7 @@
         </div>
         <div class="container grid grid-4-cols">
           <div class="footer-col">
-            <h5>About</h5>
+            <h5 class="footer-col__heading">About</h5>
             <ul class="footer-nav">
               <li><a href="#">shop</a></li>
               <li><a href="#">plan my kitchen</a></li>
@@ -19,7 +19,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Service</h5>
+            <h5 class="footer-col__heading">Service</h5>
             <ul class="footer-nav">
               <li><a href="#">faq</a></li>
               <li><a href="#">contact</a></li>
@@ -28,25 +28,39 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h5>Info</h5>
-            <p>
-              <a href="tel:01234567890">delivery</a><br>
-              <a href="mailto:hello@mk.com">terms</a>
-              <a href="mailto:hello@mk.com">privacy</a>
-            </p>
+            <h5 class="footer-col__heading">Info</h5>
+            <ul class="footer-nav">
+              <li>
+                <a href="tel:01234567890">delivery</a><br>
+              </li>
+              <li>
+                <a href="mailto:hello@mk.com">terms</a><br>
+              </li>
+              <li>
+                <a href="mailto:hello@mk.com">privacy</a><br>
+              </li>
+            </ul>
           </div>
           <div class="footer-col">
-            <h5>Follow</h5>
-            <div class="grid grid-3-cols">
-              <TheFaceBookIcon />
-              <TheInstagramIcon />
-              <TheTwitterIcon />
+            <h5 class="footer-col__heading">Follow</h5>
+            <div class="grid grid-3-cols footer-social-icons">
+              <div class="rounded-icon-wrapper">
+                <TheFaceBookIcon />
+              </div>
+              <div class="rounded-icon-wrapper">
+                <TheInstagramIcon />
+              </div>
+              <div class="rounded-icon-wrapper">
+                <TheTwitterIcon />
+              </div>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
           <div class="container">
-            <p>Copyright Online MTC Home Kitchens 2018 - All rights reserved. Responsive website design, Development &
+            <p class="copyright-content mx-auto">Copyright Online MTC Home Kitchens 2018 - All rights reserved.
+              Responsive
+              website design, Development &
               Hosting by mtc.</p>
             <TheDivider width="100%" />
           </div>
@@ -92,18 +106,6 @@ const footerSectionStyle = {
   line-height: 1.8;
 }
 
-.footer-col .logo {
-  font-family: var(--font-family-secondary);
-  font-size: 2.5rem;
-  font-weight: var(--font-weight-bold);
-  border: 2px solid var(--color-white);
-  padding: 0.5rem 0.75rem;
-  line-height: 1;
-  color: var(--color-white);
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
 .footer-nav {
   list-style: none;
   padding: 0;
@@ -114,10 +116,14 @@ const footerSectionStyle = {
 }
 
 .footer-nav a, .footer-col p a {
-  color: var(--color-light-ui);
+  color: var(--color-white);
+  font-family: var(--font-family-secondary);
   text-decoration: none;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   transition: color 0.3s;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .footer-nav a:hover, .footer-col p a:hover {
@@ -150,6 +156,18 @@ const footerSectionStyle = {
 .footer-content {
   position: relative;
   z-index: 2;
+}
+
+.copyright-content {
+  opacity: 0.5;
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-secondary);
+}
+
+.footer-social-icons {
+  grid-template-columns: repeat(3, max-content);
+  gap: var(--font-size-sm);
 }
 
 /* Responsive adjustments for footer columns */

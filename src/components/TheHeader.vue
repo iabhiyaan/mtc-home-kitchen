@@ -65,7 +65,7 @@ import TheDivider from "@/components/TheDivider.vue";
 
 .nav-link, .header-socials a {
   font-family: var(--font-family-secondary); /* Use Roboto for nav links */
-  font-size: var(--font-size-xs); /* Use 13px for nav links */
+  font-size: 16px; /* Use 13px for nav links */
   color: var(--color-white);
   text-decoration: none;
   text-transform: uppercase;
