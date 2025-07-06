@@ -3,7 +3,7 @@
     <div class="container text-center">
       <p class="subheading text-primary">what our customers say</p>
       <h2 class="section-title section-content mx-auto">Over 35 years experience designing handmade kitchens</h2>
-      <div class="testimonial-slider">
+      <div class="testimonial-slider content-cta-gap">
         <button class="slider-button" @click="prev">
           <img :src="leftArrow" alt="left arrow" />
         </button>
@@ -19,7 +19,7 @@
           <img :src="rightArrow" alt="right arrow" />
         </button>
       </div>
-      <a href="#" class="btn btn-primary">Frequently Asked Questions</a>
+      <a href="#" class="btn btn-primary faq-btn">Frequently Asked Questions</a>
     </div>
   </section>
 </template>

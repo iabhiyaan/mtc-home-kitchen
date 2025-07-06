@@ -1,9 +1,9 @@
 <template>
-  <footer>
+  <footer class="section pb-0">
     <div class="main-footer">
       <TheBackgroundOverlay :opacity="0.8" />
       <div class="footer-content">
-        <div class="container flex justify-center">
+        <div class="container flex justify-center align-center footer-divider-logo-gap content-cta-gap">
           <TheDivider />
           <TheLogo />
           <TheDivider />
@@ -57,8 +57,8 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="container">
-            <p class="copyright-content mx-auto">Copyright Online MTC Home Kitchens 2018 - All rights reserved.
+          <div class="container copyright-content-gap">
+            <p class="copyright-content copyright-content-gap mx-auto">Copyright Online MTC Home Kitchens 2018 - All rights reserved.
               Responsive
               website design, Development &
               Hosting by mtc.</p>
@@ -130,12 +130,6 @@ const footerSectionStyle = {
   color: var(--color-primary);
 }
 
-.footer-socials {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
 .footer-socials a {
   color: var(--color-white);
   font-weight: bold;
@@ -143,7 +137,6 @@ const footerSectionStyle = {
 
 .footer-bottom {
   margin-top: 3rem;
-  padding: 1.5rem 0;
   text-align: center;
 }
 
@@ -170,14 +163,17 @@ const footerSectionStyle = {
   gap: var(--font-size-sm);
 }
 
+.footer-divider-logo-gap {
+  gap: var(--gutter);
+}
+
 /* Responsive adjustments for footer columns */
 @media (max-width: 768px) {
   .footer-col {
     text-align: center;
-    margin-bottom: 2rem;
   }
 
-  .footer-socials {
+  .footer-social-icons {
     justify-content: center;
   }
 }

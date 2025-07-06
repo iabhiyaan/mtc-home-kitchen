@@ -27,10 +27,25 @@ import contentImage from "@/assets/images/content1.png";
   padding-left: 2rem;
 }
 
+.gallery-wrapper .col-image {
+  order: 1
+}
+
+.gallery-wrapper .col-text {
+  order: 2
+}
+
 @media (max-width: 768px) {
   .col-text {
     padding-left: 0;
-    margin-top: 2rem;
+  }
+
+  .gallery-wrapper .col-image {
+    order: 2
+  }
+
+  .gallery-wrapper .col-text {
+    order: 1
   }
 }
 </style>

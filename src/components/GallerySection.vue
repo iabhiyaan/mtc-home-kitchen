@@ -1,8 +1,8 @@
 <template>
   <section class="section">
     <div class="container text-center">
-      <h2 class="section-title">Customer Gallery</h2>
-      <div class="grid grid-4-cols gallery-wrapper">
+      <h2 class="section-title content-cta-gap">Customer Gallery</h2>
+      <div class="grid grid-4-cols gallery-wrapper content-cta-gap">
         <div v-for="(image, index) in galleryImages" :key="index" class="gallery-item">
           <img :src="image" alt="Gallery Image" class="gallery-image">
         </div>
@@ -30,5 +30,9 @@ const galleryImages = [
 <style scoped>
 .gallery-wrapper {
   gap: var(--gutter)
+}
+
+.gallery-image {
+  width: 100%;
 }
 </style>

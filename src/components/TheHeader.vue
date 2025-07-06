@@ -83,7 +83,7 @@ import TheDivider from "@/components/TheDivider.vue";
   font-size: var(--font-size-xs); /* Adjust button font size */
   border: 1px solid var(--color-white);
   border-radius: 25px;
-  padding: 14px 40px;
+  padding: 10px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
