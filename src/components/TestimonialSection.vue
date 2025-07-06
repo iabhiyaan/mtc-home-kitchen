@@ -27,7 +27,10 @@
 <script setup lang="ts">
 import leftArrow from "@/assets/images/left-arrow.svg";
 import rightArrow from "@/assets/images/right-arrow.svg";
+import useSlider from "@/composables/useSlider";
+
 import { ref } from "vue";
+
 
 const testimonials = [
   {
@@ -38,15 +41,7 @@ const testimonials = [
   { text: "Excellent service and beautiful craftsmanship. Will use again.", name: "Alastair Cook" }
 ];
 
-const current = ref(0);
-
-function next() {
-  current.value = (current.value + 1) % testimonials.length;
-}
-
-function prev() {
-  current.value = (current.value - 1 + testimonials.length) % testimonials.length;
-}
+const { next, prev, current } = useSlider(testimonials)
 </script>
 
 <style scoped>

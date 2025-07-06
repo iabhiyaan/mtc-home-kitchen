@@ -79,9 +79,15 @@ import TheDivider from "@/components/TheDivider.vue";
 
 .main-header .btn-alt {
   color: var(--color-white);
-  border-color: var(--color-white);
   background-color: transparent;
   font-size: var(--font-size-xs); /* Adjust button font size */
+  border: 1px solid var(--color-white);
+  border-radius: 25px;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--font-size-xs);
 }
 
 .main-header .btn-alt:hover {
