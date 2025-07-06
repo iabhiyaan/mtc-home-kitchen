@@ -151,6 +151,7 @@ a {
     font-family: var(--font-family-secondary);
 }
 
+
 /* ==========================================================================
    4. Layout Helpers (No changes here)
    ========================================================================== */
@@ -182,6 +183,10 @@ a {
     justify-content: center;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .align-center {
     align-items: center;
 }
@@ -201,6 +206,10 @@ a {
 
 .grid-4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.hidden {
+    display: none;
 }
 
 /* ==========================================================================

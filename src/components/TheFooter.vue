@@ -44,21 +44,28 @@
           <div class="footer-col">
             <h5 class="footer-col__heading">Follow</h5>
             <div class="grid grid-3-cols footer-social-icons">
-              <div class="rounded-icon-wrapper">
-                <TheFaceBookIcon />
+              <div>
+                <a class="rounded-icon-wrapper" href="#" target="_blank">
+                  <TheFaceBookIcon />
+                </a>
               </div>
-              <div class="rounded-icon-wrapper">
-                <TheInstagramIcon />
+              <div>
+                <a class="rounded-icon-wrapper" href="#" target="_blank">
+                  <TheInstagramIcon />
+                </a>
               </div>
-              <div class="rounded-icon-wrapper">
-                <TheTwitterIcon />
+              <div>
+                <a class="rounded-icon-wrapper" href="#" target="_blank">
+                  <TheTwitterIcon />
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
           <div class="container copyright-content-gap">
-            <p class="copyright-content copyright-content-gap mx-auto">Copyright Online MTC Home Kitchens 2018 - All rights reserved.
+            <p class="copyright-content copyright-content-gap mx-auto">Copyright Online MTC Home Kitchens 2018 - All
+              rights reserved.
               Responsive
               website design, Development &
               Hosting by mtc.</p>
